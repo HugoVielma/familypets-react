@@ -1,38 +1,22 @@
 
-import { getDoc } from "@firebase/firestore";
+import { getDoc, doc } from "@firebase/firestore";
 import React, {useState, useEffect}  from "react";
 import { useParams } from "react-router";
-
+import {db} from "../firebaseConfig"
 import ItemDetail from "../ItemDetail/ItemDetail"
-// import { getFirestore, doc, getDoc } from "@firebase/firestore";
-
-
-
-
-
-// const viewProducto =(id)=>{
-//     return new Promise((resolucion)=>{
-//         setTimeout(() => { 
-//            const productoAl = producto.find((producto)=>{
-//                return parseInt(id) ===  producto.id;
-//            })
-//            resolucion(productoAl)
-//         }, 1000);
-//     });
-// }
 
  
 
  const ItemDetailContainer =() =>{
  
     const [productoDetail, setProductoDetail] =  useState({});
-    const {productoId} = useParams();
-    console.log(productoId)
+    const {itemId} = useParams();
+    console.log(itemId)
 
     useEffect(()=>{
         const viewProducto = async()=>{
          try {
-          const docRef = doc(db, "producto", productoId);
+          const docRef = doc(db, "producto", itemId);
           const docSnap = await getDoc(docRef)
           if (docSnap.exists()){
              console.log(docSnap.data())
@@ -41,11 +25,14 @@ import ItemDetail from "../ItemDetail/ItemDetail"
               console.log("no se encuentra")
           }
            }
-    }catch{console.error();}    
+    catch(err)
+    {
+        console.error(err);
+    }    
     }
     viewProducto(); 
- },[productoId]);
-console.log(`productoDetail`,productoDetail);
+ },[itemId]);
+
 return(
     <>
 

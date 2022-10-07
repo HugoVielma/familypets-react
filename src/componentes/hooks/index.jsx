@@ -1,6 +1,6 @@
 import {collection, getDocs , query  , where } from 'firebase/firestore';
 import {useEffect , useState } from 'react';
-import { db } from './../componentes/firebaseConfig';
+import { db } from '../firebaseConfig';
 
 
 
