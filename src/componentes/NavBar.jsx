@@ -1,8 +1,7 @@
 import '../App.css'
 import CartWidget from './CartWidget'
 import { Link } from 'react-router-dom'
-import logo from "./image/Editable_Family_Pets2.png"
-
+import logo from "../image/Editable_Family_Pets2.png"
 function NavBar(){
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -20,7 +19,7 @@ function NavBar(){
               <Link className="nav-link" to="/especie/gato">gato</Link>
             </li> 
             <li className="nav-item">
-             <CartWidget />
+             <Link className="nav-link"  to="/cart"><CartWidget /></Link>
             </li> 
           </ul>
         </div>

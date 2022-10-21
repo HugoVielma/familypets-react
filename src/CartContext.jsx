@@ -1,7 +1,6 @@
 import { createContext, useState } from "react";
 import { useContext } from "react";
-// import producto from "./componentes/datos/productos";
-// import producto from "./componentes/datos/productos";
+
 
 
 

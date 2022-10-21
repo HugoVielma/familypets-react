@@ -8,11 +8,11 @@ import Item from "../item/Item"
 const ItemList = ({products}) =>{
     return(
         <div className="row">
-        <div className="col-12 col-sm-4 text-center d-flex">
+        <div className="col-12 col-lg-12 text-center container_card">
        
-              {products.map(item =>{
+              {products.map(especieid =>{
                   return(
-                      <Item producto={item} key={item.id}/>
+                      <Item producto={especieid} key={especieid.id}/>
                   )
               }) }
         </div>

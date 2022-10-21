@@ -6,7 +6,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 import ItemList from '../itemList/ItemList';
-import useFirebase from '../hooks/index';
+import useFirebase from '../../hooks/index';
 
 
 const ItemListContainer = () => {

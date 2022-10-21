@@ -2,7 +2,7 @@
 import { getDoc, doc } from "@firebase/firestore";
 import React, {useState, useEffect}  from "react";
 import { useParams } from "react-router";
-import {db} from "../firebaseConfig"
+import {db} from "../../firebaseConfig"
 import ItemDetail from "../ItemDetail/ItemDetail"
 
  
@@ -11,7 +11,7 @@ import ItemDetail from "../ItemDetail/ItemDetail"
  
     const [productoDetail, setProductoDetail] =  useState({});
     const {itemId} = useParams();
-    console.log(itemId)
+ 
 
     useEffect(()=>{
         const viewProducto = async()=>{

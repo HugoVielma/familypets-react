@@ -1,3 +1,12 @@
+##Bienvenidos a mí Proyecto de React Comisión 34740
+
+**La instalación y ejecución de este proyecto fue realizado en el perido de cursada, el que fue guiado y orientado por nuestro profesor Alex Marin Mendez en Coderhouse y mi tutor Santiago Salkin que complemento con su conocimiento y apoyo, juntos compañeros, con esta cursada me permitio tener el aprendizaje y conocimiento en finalizar esta entrega.**
+
+###FamilyPets:
+**Fue creado para venta de productos de mascotas que es un proyecto que se inicio en familia y queremos iniciarlo y llevarlo al mercado Web, ya que las mascotas de la casa son muy importantes "Son Parte De La Familia".**
+
+**Utilice npm -v 8.15.0, banco de imágenes, firebase y otras tecnicas explicadas en el curso para realizar este proyecto.**
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

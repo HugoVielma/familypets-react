@@ -18,9 +18,9 @@ const [aCart, setaCart] = useState(false);
   
       <div className="container">
     <div className="row">
-    <div className="col-12 col-sm-4 text-center d-flex container-fluid">
+    <div className="col-12 col-sm-4 text-center d-flex container_card">
     <div className="card">
-        <img src={producto.imagen} className="card-img-top"  alt="img__card"/>
+        <img src={producto.image} className="card-img-top"  alt="img__card"/>
         <div className="card-body">
           <h5 className="card-title">
           {producto.title}
